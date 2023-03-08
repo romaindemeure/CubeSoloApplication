@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 
 namespace cubeSolo.Models
 {
+    // classe Users utilisée pour représenter des utilisateurs
     public class Users
     {
+        // nom est décorée avec [JsonProperty("nom")] donc l'objet nom est sérialisé en JSON
         [JsonProperty("nom")]
+
+        // définition de propriété C# pour la classe Users. Cette propriété représente le nom de l'utilisateur
         public string? nom { get; set; }
 
         [JsonProperty("prenom")]

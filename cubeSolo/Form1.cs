@@ -32,14 +32,6 @@ namespace cubeSolo
 
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Modifiers == Keys.Alt && e.KeyCode == Keys.T)
-            {
-                MessageBox.Show("Mode Admin Activé");
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Connexion connexion = new Connexion();
@@ -56,6 +48,11 @@ namespace cubeSolo
         {
             ConnectSupprimer connexion = new ConnectSupprimer();
             connexion.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
